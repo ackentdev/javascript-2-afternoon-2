@@ -18,7 +18,9 @@ var arr = [10,20,30];
 */
 
 //Code Here
-
+function first(arr){
+  return arr[0]
+}
 
 
 ////////// PROBLEM 2 //////////
@@ -33,7 +35,9 @@ var arr = [40,50,60];
 */
 
 //Code Here
-
+function last(arr){
+  return arr[arr.length - 1]
+}
 
 
 ////////// PROBLEM 3 //////////
@@ -48,7 +52,11 @@ var family = ['Tyler', 'Jordyn', 'Ryan', 'Chelsey', 'Ireland'];
 */
 
 //Code Here
-
+function looper(family){
+  for(i=0; i < family.length; i++){
+    alert(family[i])
+  }
+}
 
 
 ////////// PROBLEM 4 //////////
@@ -63,7 +71,11 @@ var letters = ['A', 'B', 'C', 'D', 'E'];
 */
 
 //Code Here
-
+function reversedLooper(letters){
+  for (i=letters.length - 1; i >= 0; i--){
+    alert(letters[i])
+  }
+}
 
 
 ////////// PROBLEM 5 //////////
@@ -79,7 +91,16 @@ var nums = [1,2,3,6,22,98,45,23,22,12];
 
 //Code Here
 
+var igor = []
 
+function evenFinder(nums){
+  for (i=0; i < nums.length; i++){
+    if (nums[i]%2 === 0){
+      igor.push(nums[i])
+    }
+  }
+  return igor
+}
 
 
 
@@ -107,6 +128,20 @@ var numbersArray = [1,2,34,54,55,34,32,11,19,17,54,66,13];
 */
 
 //Code Here
+function divider(numbersArray){
+  let gucciEven = []
+  let gucciOdd = []
+  let gucciGang = [gucciEven,gucciOdd]
+  for (i=0; i<numbersArray.length; i++){
+    if (numbersArray[i]%2 === 0){
+      gucciEven.push(numbersArray[i])
+    }
+    else {
+      gucciOdd.push(numbersArray[i])
+    }
+  }
+  return gucciGang
+}
 
 
 
@@ -129,6 +164,16 @@ var getRandomArbitrary = function() {
 */
 
 //Code Here
+function finder(array){
+  let randomNumber = getRandomArbitrary()
+  for(let i=0; i<array.length; i++){
+    }
+    if(array[i] === randomNumber){
+      return true
+    }else{
+      return false
+    }
+  }
 
 
 
@@ -158,6 +203,28 @@ var myGroceryList = ['chips', 'pizza', 'hotpockets', 'MtnDew', 'corndogs'];
 */
 
 //Code Here
+function removeItem(myGroceryList, remove){
+  for(i=0; i<myGroceryList.length; i++){
+    if (myGroceryList[n] = remove){
+      myGroceryList.splice(i,1)
+    }
+  }
+  if (myGroceryList = false){
+    myGroceryList.splice(0)
+  }
+  return myGroceryList
+}
+
+function addItem(myGroceryList, add){
+  if (myGroceryList != add){
+    myGroceryList.push(item)
+  }
+  if (myGroceryList = false){
+    myGroceryList.splice(0)
+  }
+  return myGroceryList
+}
+
 
 
 
@@ -168,7 +235,13 @@ var myGroceryList = ['chips', 'pizza', 'hotpockets', 'MtnDew', 'corndogs'];
 */
 
 //Code Here
-
+function maker(){
+  let array = [];
+  for (i=1; i < 216; i++){
+    array.push(i)
+  }
+  return array
+}
 
 
 ////////// PROBLEM 10 //////////
@@ -184,7 +257,13 @@ var numbers = [5, '9', 16, 19, '25', '34', 48];
 */
   
 //Code Here
-
+function addTen(numbers){
+  let newNumbers = []
+for (i=0; i < numbers.length; i++){
+    newNumbers.push(numbers[i] = parseInt(numbers[i]) + 10);
+  }
+  return newNumbers
+}
 
 
 ////////// PROBLEM 11 //////////
@@ -209,7 +288,14 @@ for(var i = 0; i < num2; i++){
 */
 
 //Code Here
-
+function longer(){
+  if (arr1.length > arr2.length){
+    return arr1
+  }
+  else{
+    return arr2
+  }
+}
 
 
 /*
@@ -221,7 +307,12 @@ for(var i = 0; i < num2; i++){
 */
 
 //Code Here
+// function both(arr1, arr2){
+// let bothArr = []
+// for (i=0; i < longer()) {
 
+// }
+// }
 
 
 ////////// PROBLEM 12 //////////
