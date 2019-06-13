@@ -165,15 +165,16 @@ var getRandomArbitrary = function() {
 
 //Code Here
 function finder(array){
-  let randomNumber = getRandomArbitrary()
-  for(let i=0; i<array.length; i++){
-    }
-    if(array[i] === randomNumber){
-      return true
-    }else{
-      return false
-    }
+  let randomNumber = getRandomArbitrary();
+  console.log('The random number is:', randomNumber);
+
+  for (let i = 0; i < array.length; i++) {
+      if (array[i] === randomNumber) {
+          return true;
+      }
   }
+  return false;
+}
 
 
 
